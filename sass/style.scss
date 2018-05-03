@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$fonts: "Open Sans", sans-serif;
+
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+ 
+}
+body {
+	background-color: #ecf0f1;
+	text-align: center;
+}
+
+.board h1 {
+	background-color: #009688;
+	color: #FFFFFF;
+	margin-top: 0;
+	height: 80px;
+	line-height: 80px;
+}
+
+/* BUTTONS*/
+
+.btn { 
+    cursor: pointer;
+}
+
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #FFFFFF;
+  font-size: 15px;
+  border-radius: 3px; 
+}
+
+.create-column { 
+    margin: 20px auto;
+    display: block;
+    background-color: #f1c40f;
+    color: #313332;
+    height: 50px;
+    line-height: 30px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+    border-radius: 3px;
+    font-weight: 800;
+}
+
+.column-add-card {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    height: 50px;
+    min-width: 400px;
+    font-size: 20px;
+    color: #313332;
+    border-radius: 0 0 5px 5px; 
+}
+/* COLUMNS & CARDS */
+
+.column-container { 
+    margin: 20px;  
+    display: flex; 
+    flex-flow: wrap; 
+    justify-content: space-around; 
+    position: relative;
+        .column { 
+            border: 1px solid #313332; 
+            background-color: #313332; 
+            min-width: 400px; 
+            min-height: 400px; 
+            margin: 15px 0; 
+            flex: 0 auto; 
+            border-radius: 5px; 
+            position: relative; 
+            padding: 0;
+                .column-title { 
+                    text-align: center; 
+                    background-color: #009688; 
+                    border-radius: 5px 5px 0 0; 
+                    min-height: 50px; 
+                    margin-top: 0; 
+                    line-height: 50px;
+                    text-transform: uppercase; 
+                    color: #FFFFFF;
+                }
+                .card-list { 
+                    list-style-type: none; 
+                    background-color: #313332; 
+                    padding: 0; 
+                    min-height: 400px; 
+                        .card {
+                            min-height: 100px; 
+                            width: 85%; 
+                            border-radius: 5px; 
+                            margin: 25px auto; 
+                            background-color: #04C4E9;
+                            position: relative;
+                                p {
+                                    padding: 10px 10px;
+                                    color: #FFFFFF;
+                                }
+                        }
+                }
+        }
+    
+}        
+
+
+
+

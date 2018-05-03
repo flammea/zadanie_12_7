@@ -1,70 +1,101 @@
-body {margin: 0;}
-* {box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-.ui-sortable {
-  min-height: 80px;
-}
-.btn-delete {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 22px;
-  height: 22px;
-  border: 0;
-  background-color: rgba(0,0,0,0.4);
-  color: white;
-}
-/* BOARD */
-.board h1 {
-  margin-left: 8px;
-}
-.column-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+html { 
+	box-sizing: border-box; 
 }
 
+* { 
+	box-sizing: inherit; 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+	background-color: #ecf0f1;
+	text-align: center;
+}
+
+h1 {
+	background-color: #009688;
+	color: #FFFFFF;
+	margin-top: 0;
+	height: 80px;
+	line-height: 80px;
+}
+
+button {
+	cursor: pointer;
+	background-color: #bdc3c7;
+	color: #FFFFFF;
+	margin: 2px;
+    border: none;
+    text-decoration: none;
+    border-radius: 60px;
+}
+
+.create-column {
+    margin: 20px 10px;
+    display: block;
+    background-color: #f1c40f;
+    height: 50px;
+    line-height: 30px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 15px;
+}
 
 /* COLUMN */
-.column {
-  order: 1;
-  min-width: 300px;
-  min-height: 50vh;
-  background-color: lightgrey;
-  margin-left: 8px;
-  list-style: none;
-  position: relative;
-}
-.column-add-card {
-  cursor: pointer;
-  text-decoration: underline;
-  margin: 5px 8px;
-  display: block;
+.column-container {
+	margin: 0 20px;
 }
 
-/* STYLE KARTY */
-.card {
-  box-sizing: border-box;
-  display: block;
-  height: 60px;
-  margin-bottom: 5px;
-  padding: 4px;
-  overflow: hidden;
-  position: relative;
+.column {
+    order: 1;
+    width: 20%;
+    min-height: 50vh;
+    background-color: #313332;
+    color: #FFFFFF;
+    margin-left: 8px;
+    list-style: none;
+    position: relative;
+    float: left;
+    flex-wrap: nowrap;
+    margin: 20px;
 }
-.card-list {
-  list-style: none;
-  margin: 5px;
-  padding: 0px;
+.column-title {
+    margin: 8px 5px;
+}
+.column-card-list {
+   list-style: none;
+   margin: 5px;
+   padding: 0px;
+}
+
+/* CARD */
+.card {
+    box-sizing: border-box;
+    display: block;
+    margin: 5px;
+    padding: 4px;
+    background-color: #04C4E9;
+    overflow: hidden;
+    position: absolute;
+    min-height: 100px;
+    text-align: center;
+    position: center;
+    width: 15%;
 }
 .card-description {
-  margin: 2px 0;
+    margin: 2px;
+    width: 100%;
 }
-.card-placeholder {
-  box-sizing: border-box;
-  display: block;
-  height: 60px;
-  margin-bottom: 5px;
-  border: 2px solid lightgrey;
-  background-color: lightblue;
+.card .btn-delete {
+	display: block;
+	float: right;
+}
+
+.card-placeholder,
+.column-card-list {
+	min-height: 100px;
 }

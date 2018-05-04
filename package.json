@@ -7,6 +7,7 @@
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.24.2",
+    "glob-run": "^0.1.6",
     "jshint": "^2.9.5",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.0",
@@ -32,7 +33,6 @@
     "watch:sass": "node-sass --output-style expanded --source-map true sass/style.scss css/style.css --watch",
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
     "watch:browser-sync": "node_modules/.bin/browser-sync --server --files \"css/*.css,index.html, js/*.js\" --browser \"chrome\" "
- 
   },
   "keywords": [],
   "author": "",

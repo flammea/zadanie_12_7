@@ -10,6 +10,8 @@ body { background-color: #ecf0f1; text-align: center; }
 
 .btn-delete { position: absolute; right: 0; top: 0; width: 23px; height: 23px; border: 0; background-color: rgba(255, 255, 255, 0.5); color: #FFFFFF; font-size: 15px; border-radius: 3px; }
 
+.btn-edit { position: absolute; right: 30px; top: 0; width: 23px; height: 23px; border: 0; background-color: rgba(255, 255, 255, 0.5); font-size: 15px; border-radius: 3px; color: #FFFFFF; }
+
 .create-column { margin: 20px auto; display: block; background-color: #f1c40f; color: #313332; height: 50px; line-height: 30px; width: 150px; font-size: 15px; font-weight: 800; border: none; border-radius: 3px; font-weight: 800; }
 
 .column-add-card { position: absolute; bottom: -1px; left: -1px; height: 50px; min-width: 400px; font-size: 20px; color: #313332; border-radius: 0 0 5px 5px; }

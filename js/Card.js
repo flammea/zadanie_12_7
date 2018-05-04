@@ -11,7 +11,7 @@ function Card(id, name, columnId) {
 		var card = $('<li class="card"></li>');
 		var cardDeleteBtn = $('<button class="btn-delete">x</button>');
 		var cardDescription = $('<p class="card-description"></p>');
-		var cardEditBtn = $('<button class="btn-edit"><i class="fa fa-edit"></i></button>');
+		var cardEditBtn = $('<button class="btn-edit"><i class="fas fa-pencil-alt"></i></button>');
 
 		cardDeleteBtn.click(function(){
 			self.removeCard();
